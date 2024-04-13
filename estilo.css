@@ -1,0 +1,31 @@
+@font-face {
+    font-family: sans-serif; 
+    src: url(PixelifySans.ttf) format('truetype');
+}
+.my-info{
+    text-align: left;
+    font-family: "Pixelify Sans", sans-serif;
+    color: blue;
+}
+.nome{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+}
+.contato-section{
+    text-align: left;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.foto{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.nav-letra{
+    font-family: "Pixelify Sans", sans-serif;
+}
