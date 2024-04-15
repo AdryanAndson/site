@@ -30,3 +30,21 @@
 .nav-letra{
     font-family: "Pixelify Sans", sans-serif;
 }
+.link:hover {
+    background-color: yellow;
+}
+section{
+    padding: 10px;
+}
+footer{
+    font-family: "Pixelify Sans", sans-serif;
+    color: blue;
+}
+body {
+    background: url('vapowave.gif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
