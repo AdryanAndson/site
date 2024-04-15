@@ -3,9 +3,11 @@
     src: url(PixelifySans.ttf) format('truetype');
 }
 .my-info{
-    text-align: left;
+    color: #fff; /* Muda a cor do texto para branco */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
     font-family: "Pixelify Sans", sans-serif;
-    color: blue;
 }
 .nome{
     text-align: center;
@@ -16,7 +18,10 @@
 .contato-section{
     text-align: left;
     font-family: "Pixelify Sans", sans-serif;
-    color: blue;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
 }
 .foto{
     border-radius: 100%;
@@ -29,6 +34,10 @@
 }
 .nav-letra{
     font-family: "Pixelify Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
 }
 .link:hover {
     background-color: yellow;
@@ -38,7 +47,10 @@ section{
 }
 footer{
     font-family: "Pixelify Sans", sans-serif;
-    color: blue;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
 }
 body {
     background: url('vapowave.gif') no-repeat center center fixed;
