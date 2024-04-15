@@ -40,7 +40,7 @@
     line-height: 1.5; /* Ajusta o espaçamento entre linhas */
 }
 .link:hover {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
 }
 section{
     padding: 10px;
@@ -58,5 +58,9 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+header{
+    background-color: #00000041; /* Cor de fundo */
+    padding: 10px 0; /* Espaçamento interno */
 }
 
