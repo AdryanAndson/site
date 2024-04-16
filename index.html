@@ -11,7 +11,7 @@
 <body>
     <header>
         <picture>
-            <img src="mac.jpg" class="foto">
+            <img src="mac.jpg" class="foto" id="minhaFoto">
         </picture>
             <h1 class="nome">Adryan Andson da Silva Almeida</h1>
         </div>
@@ -61,9 +61,27 @@
     <footer>
         Todos os direitos reservados ao seu devido autor 
       </footer>
-    
-      <audio src="Enjoy.mp3" autoplay>
-        Desculpe, seu navegador não suporta o elemento de áudio.
-        </audio>
+
+      <audio id="meuAudio" src="Enjoy.mp3"></audio>
+
+      <script>
+        // Seleciona a foto
+        var minhaFoto = document.getElementById("minhaFoto");
+        // Seleciona o elemento de áudio
+        var meuAudio = document.getElementById("meuAudio");
+        var audioTocando = false;
+      
+        // Adiciona um evento de clique à foto para reproduzir ou pausar o áudio
+        minhaFoto.addEventListener('click', function() {
+          if (audioTocando) {
+            meuAudio.pause();
+            audioTocando = false;
+          } else {
+            meuAudio.play();
+            audioTocando = true;
+          }
+        });
+      </script>
+      
 </body>
 </html>
