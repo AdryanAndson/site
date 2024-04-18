@@ -3,17 +3,30 @@
     src: url(PixelifySans.ttf) format('truetype');
 }
 .my-info{
-    color: #fff; /* Muda a cor do texto para branco */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
-    font-size: 16px; /* Ajusta o tamanho da fonte */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    color: #ff6b81; /* Cor do texto em destaque */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra sutil */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
     font-family: "Pixelify Sans", sans-serif;
+    text-align: center; /* Centraliza o texto */
+}
+.my-info h2 {
+    font-size: 24px; /* Aumenta o tamanho do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    text-transform: uppercase; /* Transforma o texto do título em maiúsculas */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre letras do título */
+}
+.my-info p {
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos parágrafos */
+    font-weight: bold; /* Deixa o texto em negrito */
 }
 .nome{
     text-align: center;
     margin-top: 50px;
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 50px;
+    font-size: 60px; /* Aumenta um pouco o tamanho da fonte */
+    color: #ff6b81; /* Cor do nome */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Aumenta a sombra para destacar o nome */
 }
 .contato-section{
     text-align: left;
@@ -22,6 +35,7 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
     font-size: 16px; /* Ajusta o tamanho da fonte */
     line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    text-align: center;
 }
 .foto{
     border-radius: 100%;
@@ -30,7 +44,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 .nav-letra{
     font-family: "Pixelify Sans", sans-serif;
@@ -39,6 +53,12 @@
     font-size: 16px; /* Ajusta o tamanho da fonte */
     line-height: 1.5; /* Ajusta o espaçamento entre linhas */
 }
+.nav-letra ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 .link:hover {
     background-color: rgb(255, 255, 255);
 }
@@ -46,11 +66,16 @@ section{
     padding: 10px;
 }
 footer{
-    font-family: "Pixelify Sans", sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
-    font-size: 16px; /* Ajusta o tamanho da fonte */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
 }
 body {
     background: url('vapowave.gif') no-repeat center center fixed;
@@ -60,8 +85,13 @@ body {
     background-size: cover;
 }
 header{
-    background-color: #00000041; /* Cor de fundo */
-    padding: 10px 0; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    padding: 20px;
+    text-align: center;
+}
+header:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
 }
 ul{
     list-style-type: none;
@@ -69,11 +99,40 @@ ul{
     margin: 0;
 }
 h3{
-    color: #ffba6b;
+    color: #ff6b81;
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 10px;
     border-bottom: 2px solid #ff6b81;
     padding-bottom: 5px;
+    text-align: center;
 }
+ul li {
+    margin-left: 5px; /* Reduzido para ficar mais estreito */
+    padding: 10px 15px; /* Reduzido o padding horizontal */
+    position: relative;
+    border: 2px solid #9b59b6; /* Cor de destaque - púrpura */
+    border-radius: 8px;
+    background: linear-gradient(135deg, #9b59b6, #c39bd3); /* Gradiente de púrpura */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Cor do texto */
+    font-family: "Pixelify Sans", sans-serif; /* Fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+
 
