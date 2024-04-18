@@ -63,4 +63,17 @@ header{
     background-color: #00000041; /* Cor de fundo */
     padding: 10px 0; /* Espaçamento interno */
 }
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h3{
+    color: #ffba6b;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6b81;
+    padding-bottom: 5px;
+}
 
