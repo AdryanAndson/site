@@ -11,13 +11,15 @@ body {
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff; /* Definindo cor de texto padrão */
+    color: #fff;
 }
 
+/* Cabeçalho */
 header {
-    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     text-align: center;
+    border-bottom: 3px solid #ff6b81; /* Linha de destaque na parte inferior do cabeçalho */
 }
 
 header:hover {
@@ -25,13 +27,14 @@ header:hover {
     transition: background-color 0.3s ease;
 }
 
-/* Estilização da foto */
+/* Imagem do perfil */
 .foto {
-    border-radius: 50%; /* Imagem circular */
+    border-radius: 50%;
     width: 200px;
     height: 200px;
     display: block;
     margin: 0 auto;
+    border: 5px solid #ff6b81; /* Borda de destaque */
 }
 
 /* Nome */
@@ -48,7 +51,7 @@ nav.nav-letra {
 }
 
 nav.nav-letra ul {
-    list-style-type: none; /* Remove marcadores de lista */
+    list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -64,16 +67,23 @@ nav.nav-letra a {
     color: rgb(255, 255, 255);
     font-size: 16px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav.nav-letra a:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    transition: background-color 0.3s ease;
 }
 
 /* Seções */
 section {
     padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 2px solid #ff6b81; /* Borda de destaque */
 }
 
 .my-info {
@@ -89,6 +99,8 @@ section {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border-bottom: 2px solid #ff6b81; /* Linha de destaque abaixo do título */
+    padding-bottom: 10px;
 }
 
 .my-info p {
@@ -97,7 +109,7 @@ section {
 }
 
 .my-info ul, .my-info ol {
-    list-style-type: none; /* Remove marcadores e numeração */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -112,6 +124,9 @@ section {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 2px solid #ff6b81; /* Borda de destaque */
 }
 
 .contato-section h2 {
@@ -119,6 +134,8 @@ section {
     margin-bottom: 20px;
     color: #ff6b81;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ff6b81; /* Linha de destaque abaixo do título */
+    padding-bottom: 10px;
 }
 
 .contato-section p {
@@ -127,7 +144,7 @@ section {
 }
 
 .contato-section ul {
-    list-style-type: none; /* Remove marcadores de lista */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -179,21 +196,22 @@ section {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contato-section form input[type="submit"]:hover {
     background-color: #ff4c6b;
-    transition: background-color 0.3s ease;
 }
 
 /* Rodapé */
 footer {
-    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    border-top: 3px solid #ff6b81; /* Linha de destaque na parte superior do rodapé */
 }
 
 footer:hover {
