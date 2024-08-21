@@ -16,14 +16,14 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #ff6b81; /* Linha de destaque na parte inferior do cabeçalho */
+    border-bottom: 3px solid #00d2ff; /* Linha de destaque azul neon */
 }
 
 header:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: background-color 0.3s ease;
 }
 
@@ -34,13 +34,13 @@ header:hover {
     height: 200px;
     display: block;
     margin: 0 auto;
-    border: 5px solid #ff6b81; /* Borda de destaque */
+    border: 5px solid #00d2ff; /* Borda de destaque azul neon */
 }
 
 /* Nome */
 .nome {
     font-size: 60px;
-    color: #ff6b81;
+    color: #00d2ff; /* Cor do nome azul neon */
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
 }
@@ -64,16 +64,17 @@ nav.nav-letra ul li {
 
 nav.nav-letra a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #00d2ff; /* Cor dos links azul neon */
     font-size: 16px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav.nav-letra a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 210, 255, 0.3);
+    color: #fff; /* Cor do texto no hover */
 }
 
 /* Seções */
@@ -83,11 +84,11 @@ section {
     max-width: 800px;
     background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
     border-radius: 10px; /* Bordas arredondadas */
-    border: 2px solid #ff6b81; /* Borda de destaque */
+    border: 2px solid #00d2ff; /* Borda de destaque azul neon */
 }
 
 .my-info {
-    color: #ff6b81;
+    color: #00d2ff; /* Cor do texto azul neon */
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
     font-size: 18px;
     line-height: 1.6;
@@ -99,7 +100,7 @@ section {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 2px solid #ff6b81; /* Linha de destaque abaixo do título */
+    border-bottom: 2px solid #00d2ff; /* Linha de destaque azul neon */
     padding-bottom: 10px;
 }
 
@@ -120,21 +121,21 @@ section {
 
 /* Seção de Contato */
 .contato-section {
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
     background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
     border-radius: 10px; /* Bordas arredondadas */
-    border: 2px solid #ff6b81; /* Borda de destaque */
+    border: 2px solid #00d2ff; /* Borda de destaque azul neon */
 }
 
 .contato-section h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #ff6b81;
+    color: #00d2ff; /* Cor do título azul neon */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #ff6b81; /* Linha de destaque abaixo do título */
+    border-bottom: 2px solid #00d2ff; /* Linha de destaque azul neon */
     padding-bottom: 10px;
 }
 
@@ -155,7 +156,7 @@ section {
 }
 
 .contato-section ul li a {
-    color: #ff6b81;
+    color: #00d2ff; /* Cor dos links azul neon */
     text-decoration: none;
 }
 
@@ -189,7 +190,7 @@ section {
 }
 
 .contato-section form input[type="submit"] {
-    background-color: #ff6b81;
+    background-color: #00d2ff; /* Cor de fundo azul neon */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -200,22 +201,22 @@ section {
 }
 
 .contato-section form input[type="submit"]:hover {
-    background-color: #ff4c6b;
+    background-color: #00a3e0; /* Azul neon mais escuro no hover */
 }
 
 /* Rodapé */
 footer {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: 3px solid #ff6b81; /* Linha de destaque na parte superior do rodapé */
+    border-top: 3px solid #00d2ff; /* Linha de destaque azul neon */
 }
 
 footer:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: background-color 0.3s ease;
 }
 
