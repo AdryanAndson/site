@@ -2,81 +2,7 @@
     font-family: sans-serif; 
     src: url(PixelifySans.ttf) format('truetype');
 }
-.my-info{
-    color: #ff6b81; /* Cor do texto em destaque */
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra sutil */
-    font-size: 18px; /* Ajusta o tamanho da fonte */
-    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
-    font-family: "Pixelify Sans", sans-serif;
-    text-align: center; /* Centraliza o texto */
-}
-.my-info h2 {
-    font-size: 24px; /* Aumenta o tamanho do título */
-    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
-    text-transform: uppercase; /* Transforma o texto do título em maiúsculas */
-    letter-spacing: 2px; /* Aumenta o espaçamento entre letras do título */
-}
-.my-info p {
-    margin-bottom: 20px; /* Adiciona espaço abaixo dos parágrafos */
-    font-weight: bold; /* Deixa o texto em negrito */
-}
-.nome{
-    text-align: center;
-    margin-top: 50px;
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 60px; /* Aumenta um pouco o tamanho da fonte */
-    color: #ff6b81; /* Cor do nome */
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Aumenta a sombra para destacar o nome */
-}
-.contato-section{
-    text-align: left;
-    font-family: "Pixelify Sans", sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
-    font-size: 16px; /* Ajusta o tamanho da fonte */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
-    text-align: center;
-}
-.foto{
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
-}
-.nav-letra{
-    font-family: "Pixelify Sans", sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
-    font-size: 16px; /* Ajusta o tamanho da fonte */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
-}
-.nav-letra ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.link:hover {
-    background-color: rgb(255, 255, 255);
-}
-section{
-    padding: 10px;
-}
-footer{
-    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-footer:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: background-color 0.3s ease;
-}
 body {
     background: url('vapowave.gif') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -84,55 +10,148 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-header{
+
+header {
     background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
     padding: 20px;
     text-align: center;
 }
+
 header:hover {
     background-color: rgba(255, 255, 255, 0.5);
     transition: background-color 0.3s ease;
 }
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+.foto {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-h3{
-    color: #ff6b81;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #ff6b81;
-    padding-bottom: 5px;
+
+.nome {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 60px; /* Aumenta um pouco o tamanho da fonte */
+    color: #ff6b81; /* Cor do nome */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Aumenta a sombra para destacar o nome */
+}
+
+.nav-letra {
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destacar o texto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+}
+
+.nav-letra ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
-ul li {
+
+.nav-letra a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-letra a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+section {
+    padding: 10px;
+}
+
+.my-info {
+    color: #ff6b81; /* Cor do texto em destaque */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra sutil */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center; /* Centraliza o texto */
+}
+
+.my-info h2 {
+    font-size: 24px; /* Aumenta o tamanho do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    text-transform: uppercase; /* Transforma o texto do título em maiúsculas */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre letras do título */
+}
+
+.my-info p {
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos parágrafos */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.my-info ul li {
     margin-left: 5px; /* Reduzido para ficar mais estreito */
     padding: 10px 15px; /* Reduzido o padding horizontal */
     position: relative;
     border: 2px solid #9b59b6; /* Cor de destaque - púrpura */
     border-radius: 8px;
-    background: linear-gradient(135deg, #9b59b6, #c39bd3); /* Gradiente de púrpura */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-bottom: 10px;
-    font-size: 0.9em;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(135deg, #9b59b6, #c39bd3); /* Gradiente de fundo */
+    color: #ffffff;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+.my-info ul li:before {
+    content: "✓";
+    position: absolute;
+    left: -30px;
+    color: #ff6b81;
+    font-size: 24px;
+}
+
+.contato-section {
+    color: #ffffff;
+    font-family: "Pixelify Sans", sans-serif;
     text-align: center;
-    color: #fff; /* Cor do texto */
-    font-family: "Pixelify Sans", sans-serif; /* Fonte */
-    text-transform: uppercase; /* Texto em maiúsculas */
-}
-ul li:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: background-color 0.3s ease;
-}
-.link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: background-color 0.3s ease;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
 }
 
+form {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
 
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff4d6e;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
