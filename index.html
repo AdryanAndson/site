@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My personal portfolio</title>
+    <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="sonic.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -13,44 +13,69 @@
         <picture>
             <img src="mac.jpg" class="foto" id="minhaFoto">
         </picture>
-            <h1 class="nome">Adryan Andson da Silva Almeida</h1>
-        </div>
+        <h1 class="nome">Adryan Andson da Silva Almeida</h1>
         <nav class="nav-letra">
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <!--<li><a href="#portifolio">Portifolio</a></li>-->
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portifolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="sobre" class="my-info">
         <h2>Sobre Mim</h2>
-        <p>Desenvolvedor junior e também uma pessoa totalmente sociável. Formado na Faculdade UNINTER no ano de 2027.<br> Sempre fui habilidoso em resolver problemas e lidar com situações diversas.</p>
-        
+        <p>Desenvolvedor junior e também uma pessoa totalmente sociável. Formado na Faculdade UNINTER no ano de 2027. Sempre fui habilidoso em resolver problemas e lidar com situações diversas.</p>
         <h3>Características como Desenvolvedor Júnior:</h3>
         <ul>
             <li>Experiência em desenvolvimento de software, com ênfase em Front-End, Back-End ou Full-Stack.</li>
             <li>Habilidades demonstradas em resolução de problemas e criatividade em projetos anteriores.</li>
             <li>Motivado para contribuir em projetos de equipe e aprender com colegas mais experientes.</li>
         </ul>
-        
         <h3>Habilidades Interpessoais:</h3>
         <ul>
             <li>Comunicação eficaz.</li>
             <li>Facilidade para construir relacionamentos positivos e trabalhar em equipe.</li>
             <li>Disposto a compartilhar conhecimento e ajudar os outros.</li>
         </ul>
-        
         <h3>Características Pessoais:</h3>
         <ul>
             <li>Autoconfiança e habilidade para resolver problemas de forma independente.</li>
             <li>Adaptabilidade e capacidade de se ajustar a diferentes situações.</li>
             <li>Proatividade e iniciativa para buscar oportunidades de crescimento profissional.</li>
         </ul>
-    </section>    
+    </section>
+
+    <section id="formacao" class="my-info">
+        <h2>Formação</h2>
+        <ul>
+            <li>Graduação em Análise e Desenvolvimento de Sistemas - UNINTER, 2027</li>
+            <li>Idiomas: Português (Nativo), Inglês (Intermediário)</li>
+        </ul>
+    </section>
+
+    <section id="portifolio" class="my-info">
+        <h2>Portfólio</h2>
+        <ul>
+            <li><a href="link_projeto_1.html">Projeto 1: Nome do Projeto</a></li>
+            <li><a href="link_projeto_2.html">Projeto 2: Nome do Projeto</a></li>
+            <li><a href="link_projeto_3.html">Projeto 3: Nome do Projeto</a></li>
+        </ul>
+    </section>
+
     <section id="contato" class="contato-section">
-        <h2>Meus contatos</h2>
-        <p2>Entre em contato comigo:</p2>
+        <h2>Meus Contatos</h2>
+        <p>Entre em contato comigo:</p>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
         <ul>
             <li>Email: andsonadryan180@gmail.com</li>
             <li class="link"><a href="https://github.com/AdryanAndson">Github: AdryanAndson</a></li>
@@ -59,29 +84,25 @@
     </section>
 
     <footer>
-        Todos os direitos reservados ao seu devido autor 
-      </footer>
+        Todos os direitos reservados ao seu devido autor
+    </footer>
 
-      <audio id="meuAudio" src="Enjoy.mp3"></audio>
+    <audio id="meuAudio" src="Enjoy.mp3"></audio>
 
-      <script>
-        // Seleciona a foto
+    <script>
         var minhaFoto = document.getElementById("minhaFoto");
-        // Seleciona o elemento de áudio
         var meuAudio = document.getElementById("meuAudio");
         var audioTocando = false;
-      
-        // Adiciona um evento de clique à foto para reproduzir ou pausar o áudio
+
         minhaFoto.addEventListener('click', function() {
-          if (audioTocando) {
-            meuAudio.pause();
-            audioTocando = false;
-          } else {
-            meuAudio.play();
-            audioTocando = true;
-          }
+            if (audioTocando) {
+                meuAudio.pause();
+                audioTocando = false;
+            } else {
+                meuAudio.play();
+                audioTocando = true;
+            }
         });
-      </script>
-      
+    </script>
 </body>
 </html>
