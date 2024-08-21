@@ -1,64 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="sonic.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para a página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página seja exibida corretamente em dispositivos móveis -->
+    <title>Portfólio Pessoal de Adryan Andson</title> <!-- Título que aparece na aba do navegador -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Conecta o arquivo CSS para estilizar a página -->
+    <link rel="shortcut icon" href="sonic.png" type="image/x-icon"> <!-- Ícone que aparece na aba do navegador -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet"> <!-- Fonte personalizada para o site -->
 </head>
 <body>
     <header>
         <picture>
-            <img src="mac.jpg" class="foto" id="minhaFoto">
+            <img src="mac.jpg" class="foto" id="minhaFoto" alt="Minha Foto"> <!-- Imagem de perfil com um ID para interação -->
         </picture>
-        <h1 class="nome">Adryan Andson da Silva Almeida</h1>
+        <h1 class="nome">Adryan Andson da Silva Almeida</h1> <!-- Nome em destaque -->
         <nav class="nav-letra">
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#portifolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li> <!-- Link para a seção "Sobre" -->
+                <li><a href="#formacao">Formação</a></li> <!-- Link para a seção "Formação" -->
+                <li><a href="#portifolio">Portfólio</a></li> <!-- Link para a seção "Portfólio" -->
+                <li><a href="#contato">Contato</a></li> <!-- Link para a seção "Contato" -->
             </ul>
         </nav>
     </header>
 
     <section id="sobre" class="my-info">
         <h2>Sobre Mim</h2>
-        <p>Desenvolvedor junior e também uma pessoa totalmente sociável. Formado na Faculdade UNINTER no ano de 2027. Sempre fui habilidoso em resolver problemas e lidar com situações diversas.</p>
+        <p>Desenvolvedor junior e também uma pessoa totalmente sociável. Formado na Faculdade UNINTER no ano de 2027.<br> Sempre fui habilidoso em resolver problemas e lidar com situações diversas.</p>
+        
         <h3>Características como Desenvolvedor Júnior:</h3>
         <ul>
             <li>Experiência em desenvolvimento de software, com ênfase em Front-End, Back-End ou Full-Stack.</li>
             <li>Habilidades demonstradas em resolução de problemas e criatividade em projetos anteriores.</li>
             <li>Motivado para contribuir em projetos de equipe e aprender com colegas mais experientes.</li>
         </ul>
+        
         <h3>Habilidades Interpessoais:</h3>
         <ul>
             <li>Comunicação eficaz.</li>
             <li>Facilidade para construir relacionamentos positivos e trabalhar em equipe.</li>
             <li>Disposto a compartilhar conhecimento e ajudar os outros.</li>
         </ul>
+        
         <h3>Características Pessoais:</h3>
         <ul>
             <li>Autoconfiança e habilidade para resolver problemas de forma independente.</li>
             <li>Adaptabilidade e capacidade de se ajustar a diferentes situações.</li>
             <li>Proatividade e iniciativa para buscar oportunidades de crescimento profissional.</li>
         </ul>
-    </section>
+    </section>    
 
     <section id="formacao" class="my-info">
         <h2>Formação</h2>
         <ul>
-            <li>Graduação em Análise e Desenvolvimento de Sistemas - UNINTER, 2027</li>
-            <li>Idiomas: Português (Nativo), Inglês (Intermediário)</li>
+            <li>Graduação em Análise e Desenvolvimento de Sistemas - UNINTER, 2027</li> <!-- Detalhes sobre a formação acadêmica -->
+            <li>Idiomas: Português (Nativo), Inglês (Intermediário)</li> <!-- Idiomas que você fala -->
         </ul>
     </section>
 
     <section id="portifolio" class="my-info">
         <h2>Portfólio</h2>
         <ul>
-            <li><a href="link_projeto_1.html">Projeto 1: Nome do Projeto</a></li>
+            <li><a href="link_projeto_1.html">Projeto 1: Nome do Projeto</a></li> <!-- Links para os projetos no portfólio -->
             <li><a href="link_projeto_2.html">Projeto 2: Nome do Projeto</a></li>
             <li><a href="link_projeto_3.html">Projeto 3: Nome do Projeto</a></li>
         </ul>
@@ -68,32 +71,34 @@
         <h2>Meus Contatos</h2>
         <p>Entre em contato comigo:</p>
         <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem"></textarea><br>
-            <input type="submit" value="Enviar">
+            <label for="nome">Nome:</label><br> <!-- Campo para o nome -->
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="email">Email:</label><br> <!-- Campo para o email -->
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensagem">Mensagem:</label><br> <!-- Campo para a mensagem -->
+            <textarea id="mensagem" name="mensagem" required></textarea><br>
+            <input type="submit" value="Enviar"> <!-- Botão para enviar o formulário -->
         </form>
         <ul>
-            <li>Email: andsonadryan180@gmail.com</li>
-            <li class="link"><a href="https://github.com/AdryanAndson">Github: AdryanAndson</a></li>
-            <li>Celular: (69) 99337-4951</li>
+            <li>Email: andsonadryan180@gmail.com</li> <!-- Endereço de email -->
+            <li class="link"><a href="https://github.com/AdryanAndson">Github: AdryanAndson</a></li> <!-- Link para o GitHub -->
+            <li>Celular: (69) 99337-4951</li> <!-- Número de celular -->
         </ul>
     </section>
 
     <footer>
-        Todos os direitos reservados ao seu devido autor
+        Todos os direitos reservados ao seu devido autor <!-- Texto no rodapé -->
     </footer>
 
-    <audio id="meuAudio" src="Enjoy.mp3"></audio>
+    <audio id="meuAudio" src="Enjoy.mp3"></audio> <!-- Arquivo de áudio que pode ser reproduzido ao clicar na foto -->
 
     <script>
+        // Seleciona a imagem do perfil e o elemento de áudio
         var minhaFoto = document.getElementById("minhaFoto");
         var meuAudio = document.getElementById("meuAudio");
         var audioTocando = false;
 
+        // Adiciona um evento de clique à foto para tocar ou pausar o áudio
         minhaFoto.addEventListener('click', function() {
             if (audioTocando) {
                 meuAudio.pause();
