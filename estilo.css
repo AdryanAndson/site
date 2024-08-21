@@ -1,18 +1,14 @@
 @font-face {
-    font-family: 'Pixelify Sans'; /* Nome da fonte personalizada */
-    src: url('PixelifySans.ttf') format('truetype'); /* Localização do arquivo de fonte */
+    font-family: "Pixelify Sans";
+    src: url(PixelifySans.ttf) format('truetype');
 }
 
 body {
-    background: url('vapowave.gif') no-repeat center center fixed; /* Define a imagem de fundo */
-    -webkit-background-size: cover; /* Suporte para navegadores WebKit */
-    -moz-background-size: cover; /* Suporte para navegadores Mozilla */
-    -o-background-size: cover; /* Suporte para navegadores Opera */
-    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
-    font-family: 'Pixelify Sans', sans-serif; /* Define a fonte padrão */
-    margin: 0;
-    padding: 0;
-    color: #fff; /* Cor padrão do texto */
+    background: url('vapowave.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Pixelify Sans", sans-serif; /* Fonte padrão para o corpo */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
 }
 
 header {
@@ -22,58 +18,63 @@ header {
 }
 
 header:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo mais claro ao passar o mouse */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
 }
 
 .foto {
-    border-radius: 100%; /* Torna a imagem redonda */
+    border-radius: 50%; /* Torna a imagem redonda */
     width: 200px;
     height: 200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
 
 .nome {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 60px; /* Tamanho do texto do nome */
+    font-size: 60px; /* Tamanho do nome */
     color: #ff6b81; /* Cor do nome */
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra do texto para destaque */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    margin-top: 20px; /* Margem superior */
 }
 
-.nav-letra {
-    font-size: 16px; /* Tamanho do texto dos links de navegação */
-    color: rgb(255, 255, 255); /* Cor do texto */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra do texto para destaque */
+nav.nav-letra {
+    margin-top: 20px;
 }
 
-.nav-letra ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    margin: 0;
+nav.nav-letra ul {
+    list-style-type: none; /* Remove os marcadores */
     padding: 0;
-    text-align: center;
+    margin: 0;
+    text-align: center; /* Centraliza o menu de navegação */
 }
 
-.nav-letra a {
-    color: #fff; /* Cor dos links */
+nav.nav-letra ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+}
+
+nav.nav-letra a {
     text-decoration: none; /* Remove o sublinhado dos links */
-    padding: 10px 15px; /* Espaçamento ao redor dos links */
+    color: rgb(255, 255, 255); /* Cor do texto dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra dos links */
 }
 
-.nav-letra a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Fundo dos links ao passar o mouse */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+nav.nav-letra a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+section {
+    padding: 20px; /* Espaçamento interno das seções */
 }
 
 .my-info {
-    color: #ff6b81; /* Cor do texto em destaque */
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra sutil para o texto */
-    font-size: 18px; /* Tamanho da fonte */
+    color: #ff6b81; /* Cor do texto */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+    font-size: 18px;
     line-height: 1.6; /* Espaçamento entre linhas */
     text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
 }
 
 .my-info h2 {
@@ -89,67 +90,103 @@ header:hover {
 }
 
 .my-info ul {
+    padding: 0; /* Remove o padding da lista */
+    margin: 0; /* Remove a margem da lista */
+}
+
+.my-info ul li {
+    margin-bottom: 10px; /* Espaço abaixo dos itens da lista */
+}
+
+.contato-section {
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(255, 255, 255); /* Cor do texto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.contato-section h2 {
+    font-size: 28px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #ff6b81; /* Cor do título */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
+
+.contato-section p {
+    font-size: 18px; /* Tamanho do parágrafo */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+.contato-section ul {
+    list-style-type: none; /* Remove os marcadores */
     padding: 0; /* Remove o padding padrão da lista */
     margin: 0; /* Remove a margem padrão da lista */
 }
 
-.my-info ul li {
-    margin-bottom: 10px; /* Espaço abaixo de cada item da lista */
-    padding: 10px 15px; /* Espaçamento interno dos itens da lista */
-    border: 2px solid #9b59b6; /* Borda dos itens da lista */
-    border-radius: 8px; /* Cantos arredondados */
-    background: linear-gradient(135deg, #9b59b6, #c39bd3); /* Gradiente de fundo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    color: #fff; /* Cor do texto dos itens da lista */
-    text-align: center; /* Centraliza o texto dos itens da lista */
-    font-size: 0.9em; /* Tamanho da fonte dos itens da lista */
-    line-height: normal; /* Linha de altura normal */
+.contato-section ul li {
+    font-size: 16px; /* Tamanho do texto dos itens da lista */
+    margin-bottom: 10px; /* Espaço abaixo de cada item */
 }
 
-.my-info ul li:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Fundo mais claro ao passar o mouse */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+.contato-section ul li a {
+    color: #ff6b81; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
 }
 
-.contato-section {
-    font-size: 16px; /* Tamanho da fonte */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra do texto para destaque */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+.contato-section ul li a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+.contato-section form {
+    margin-top: 20px; /* Margem acima do formulário */
+}
+
+.contato-section form label {
+    display: block; /* Faz com que os rótulos ocupem uma linha inteira */
+    margin-top: 10px; /* Espaço acima dos rótulos */
+    font-size: 18px; /* Tamanho da fonte dos rótulos */
+}
+
+.contato-section form input, .contato-section form textarea {
+    width: 100%; /* Faz com que os campos ocupem toda a largura disponível */
+    padding: 10px; /* Espaçamento interno dos campos */
+    margin-top: 5px; /* Espaço acima dos campos */
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 5px; /* Cantos arredondados dos campos */
+    font-size: 16px; /* Tamanho da fonte dos campos */
+}
+
+.contato-section form textarea {
+    height: 100px; /* Altura do campo de mensagem */
+    resize: vertical; /* Permite redimensionar o campo verticalmente */
+}
+
+.contato-section form input[type="submit"] {
+    background-color: #ff6b81; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+.contato-section form input[type="submit"]:hover {
+    background-color: #ff4c6b; /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
 }
 
 footer {
     background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
     padding: 20px;
     text-align: center;
-    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    position: fixed;
     bottom: 0;
-    width: 100%; /* Ocupa toda a largura da página */
+    width: 100%;
 }
 
 footer:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo mais claro ao passar o mouse */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-}
-
-form {
-    margin: 20px 0; /* Margem ao redor do formulário */
-}
-
-form label {
-    display: block; /* Faz com que os rótulos ocupem uma linha inteira */
-    margin-top: 10px; /* Espaço acima dos rótulos */
-}
-
-form input, form textarea {
-    width: 100%; /* Faz com que os campos ocupem toda a largura disponível */
-    padding: 10px; /* Espaçamento interno dos campos */
-    margin-top: 5px; /* Espaço acima dos campos */
-    border: 1px solid #ccc; /* Borda dos campos */
-    border-radius: 5px; /* Cantos arredondados dos campos */
-}
-
-form textarea {
-    height: 100px; /* Altura do campo de mensagem */
-    resize: vertical; /* Permite redimensionar o campo verticalmente */
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
 }
